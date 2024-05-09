@@ -71,13 +71,14 @@ public class Pilha {
         this.topo = -1;
     }
 
-    public void empilhar(Object elemento) {
+    public Object empilhar(Object elemento) {
         if (tamanho == capacidade) {
             throw new IllegalStateException("A pilha está cheia.");
         }
         topo++;
         elementos[topo] = elemento;
         tamanho++;
+        return elemento;
     }
 
     public Object desempilhar() {
@@ -155,13 +156,15 @@ public class Fila {
         this.fim = -1;
     }
 
-    public void adicionar(Object elemento) {
+    public Object adicionar(Object elemento) {
         if (tamanho == capacidade) {
             throw new IllegalStateException("A fila está cheia.");
         }
         fim = (fim + 1) % capacidade;
         elementos[fim] = elemento;
         tamanho++;
+
+        return elemento;
     }
 
     public Object remover() {
@@ -220,3 +223,76 @@ public class Fila {
 - [computerscience360.wordpress.com](https://computerscience360.wordpress.com/wp-content/uploads/2018/02/algoritmos-teoria-e-prc3a1tica-3ed-thomas-cormen.pdf)
 
 ## Resultados esperados ##
+### A partir desta main:
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Testando a fila
+        Fila fila = new Fila(5);
+
+        System.out.println("Adicionando: " + fila.adicionar("Elemento 1"));
+        System.out.println("Adicionando: " + fila.adicionar("Elemento 2"));
+        System.out.println("Adicionando: " + fila.adicionar("Elemento 3"));
+        System.out.println("Adicionando: " + fila.adicionar("Elemento 4"));
+        System.out.println("Adicionando: " + fila.adicionar("Elemento 5"));
+
+        System.out.println("A fila está vazia? " + fila.estaVazia());
+
+        System.out.println("Primeiro elemento da fila: " + fila.primeiro());
+        System.out.println("Tamanho da fila: " + fila.tamanho());
+
+        while (!fila.estaVazia()) {
+            System.out.println("Removendo da fila: " + fila.remover());
+        }
+
+        System.out.println("A fila está vazia? " + fila.estaVazia());
+
+        // Testando a pilha
+        Pilha pilha = new Pilha(5);
+
+        System.out.println("");
+        System.out.println("Adicionando: " + pilha.empilhar("Elemento A"));
+        System.out.println("Adicionando: " + pilha.empilhar("Elemento B"));
+        System.out.println("Adicionando: " + pilha.empilhar("Elemento C"));
+
+        System.out.println("A pilha está vazia? " + pilha.estaVazia());
+
+        System.out.println("Topo da pilha: " + pilha.topo());
+        System.out.println("Tamanho da pilha: " + pilha.tamanho());
+
+        while (!pilha.estaVazia()) {
+            System.out.println("Desempilhando da pilha: " + pilha.desempilhar());
+        }
+
+        System.out.println("A pilha está vazia? " + pilha.estaVazia());
+    }
+}
+```
+### Espera-se esta saída:
+```markdown
+Adicionando: Elemento 1
+Adicionando: Elemento 2
+Adicionando: Elemento 3
+Adicionando: Elemento 4
+Adicionando: Elemento 5
+A fila está vazia? false
+Primeiro elemento da fila: Elemento 1
+Tamanho da fila: 5
+Removendo da fila: Elemento 1
+Removendo da fila: Elemento 2
+Removendo da fila: Elemento 3
+Removendo da fila: Elemento 4
+Removendo da fila: Elemento 5
+A fila está vazia? true
+
+Adicionando: Elemento A
+Adicionando: Elemento B
+Adicionando: Elemento C
+A pilha está vazia? false
+Topo da pilha: Elemento C
+Tamanho da pilha: 3
+Desempilhando da pilha: Elemento C
+Desempilhando da pilha: Elemento B
+Desempilhando da pilha: Elemento A
+A pilha está vazia? true
+```
