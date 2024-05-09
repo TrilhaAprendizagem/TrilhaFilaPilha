@@ -223,7 +223,7 @@ public class Fila {
 - [computerscience360.wordpress.com](https://computerscience360.wordpress.com/wp-content/uploads/2018/02/algoritmos-teoria-e-prc3a1tica-3ed-thomas-cormen.pdf)
 
 ## Resultados esperados ##
-### A partir desta main:
+### Com o arquivo main desta maneira:
 ```java
 public class Main {
     public static void main(String[] args) {
