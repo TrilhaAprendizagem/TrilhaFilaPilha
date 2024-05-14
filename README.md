@@ -27,7 +27,7 @@ A estrutura de dados pode ter algumas características:
 
 ## O que é PILHA?
 
-A pilha, ou *stack*, é uma **estrutura** onde o elemento a ser removido do conjunto é sempre o mesmo: aquele que foi inserido por último. Esse tipo de política de remoção é conhecida como **LIFO**, isto é, last in, first out (**O último que entra é o primeiro que sai**).
+A pilha, ou _stack_, é uma **estrutura** onde o elemento a ser removido do conjunto é sempre o mesmo: aquele que foi inserido por último. Esse tipo de política de remoção é conhecida como **LIFO**, isto é, last in, first out (**O último que entra é o primeiro que sai**).
 
 ## Para que utilizamos Pilhas?
 
@@ -110,7 +110,7 @@ public class Pilha {
 
 ## E o que é FILA?
 
-A Fila, ou *queue*, tem uma estrutura **semelhante** à pilha, porém com uma diferença conceitual importante: o paradigma por trás da fila é o **FIFO** - First In, First Out, ou “**O primeiro a entrar é o primeiro a sair**”.
+A Fila, ou _queue_, tem uma estrutura **semelhante** à pilha, porém com uma diferença conceitual importante: o paradigma por trás da fila é o **FIFO** - First In, First Out, ou “**O primeiro a entrar é o primeiro a sair**”.
 
 ## Para que utilizamos Filas?
 
@@ -205,16 +205,18 @@ public class Fila {
 ### Tecnologias e Versões:
 
 **Java SE (Standard Edition):**
-   - Versão: JDK 8, JDK 11 ou JDK 17 (LTS)
-   - Site Oficial: [Oracle JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+
+- Versão: JDK 8, JDK 11 ou JDK 17 (LTS)
+- Site Oficial: [Oracle JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 
 **IDE (Ambiente de Desenvolvimento Integrado):**
-   - Exemplos: Eclipse, IntelliJ IDEA, NetBeans
-   - Versões: Eclipse 2021-09, IntelliJ IDEA 2021.3, NetBeans 12.5
-   - Sites Oficiais:
-     - [Eclipse](https://www.eclipse.org/downloads/)
-     - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
-     - [NetBeans](https://netbeans.apache.org/download/nb125/index.html)
+
+- Exemplos: Eclipse, IntelliJ IDEA, NetBeans
+- Versões: Eclipse 2021-09, IntelliJ IDEA 2021.3, NetBeans 12.5
+- Sites Oficiais:
+  - [Eclipse](https://www.eclipse.org/downloads/)
+  - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
+  - [NetBeans](https://netbeans.apache.org/download/nb125/index.html)
 
 ## Documentações que falam sobre Pilha e Fila:
 
@@ -222,8 +224,10 @@ public class Fila {
 - [www.inf.ufpr.br](https://www.inf.ufpr.br/gregio/CI1001/PilhaFila.pdf)
 - [computerscience360.wordpress.com](https://computerscience360.wordpress.com/wp-content/uploads/2018/02/algoritmos-teoria-e-prc3a1tica-3ed-thomas-cormen.pdf)
 
-## Resultados esperados ##
+## Resultados esperados
+
 ### Com o arquivo main desta maneira:
+
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -268,7 +272,9 @@ public class Main {
     }
 }
 ```
+
 ### Espera-se esta saída:
+
 ```markdown
 Adicionando: Elemento 1
 Adicionando: Elemento 2
@@ -296,3 +302,7 @@ Desempilhando da pilha: Elemento B
 Desempilhando da pilha: Elemento A
 A pilha está vazia? true
 ```
+
+### Foto
+
+![foto](./Apresentação/photo.jpg)
