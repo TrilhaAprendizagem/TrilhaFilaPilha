@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/TrilhaFilaPilha.iml" filepath="$PROJECT_DIR$/.idea/TrilhaFilaPilha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trilha_fila_pilha/trilha_fila_pilha.iml" filepath="$PROJECT_DIR$/trilha_fila_pilha/trilha_fila_pilha.iml" />
+    </modules>
+  </component>
+</project>
